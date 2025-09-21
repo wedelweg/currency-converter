@@ -1,0 +1,17 @@
+### USD -> EUR
+POST http://localhost:8080/api/convert-usd-eur
+Content-Type: application/json
+
+{ "amount": 100 }
+
+### EUR -> USD
+POST http://localhost:8080/api/convert-eur-usd
+Content-Type: application/json
+
+{ "amount": 100 }
+
+### USD -> любая валюта (пример GBP)
+POST http://localhost:8080/api/convert
+Content-Type: application/json
+
+{ "amount": 150, "currency": "GBP" }
